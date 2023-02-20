@@ -1,7 +1,3 @@
-/*
-Ce code définira une série de fonctions liées à l'affichage de messages "flash" dans une application PHP. Les messages flash sont des messages temporaires affichés à l'utilisateur pour lui fournir des informations sur l'état d'une opération effectuée sur le site. Les messages flash sont généralement affichés une seule fois et disparaissent lorsqu'une nouvelle page est chargée.
- */
-
 <?php
 
 const FLASH = 'FLASH_MESSAGES';
