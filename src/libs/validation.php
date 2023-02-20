@@ -1,13 +1,4 @@
-/*
-    Ce code est simple à comprendre puisqu'il permet simplement Ce code PHP implémente une fonction de validation pour les données d'un formulaire. La fonction validate prend en entrée des données en tant qu'un tableau associatif, un tableau de champs et un tableau optionnel de messages d'erreur personnalisés. La fonction effectue une validation pour chaque champ en utilisant des règles définies dans l'option du champ. Les règles sont séparées par des caractères | et peuvent avoir des paramètres associés. Les erreurs de validation sont collectées et renvoyées sous forme de tableau associatif de champs avec des messages d'erreur correspondants.
-
-    Le code définit également une série de fonctions de validation, telles que is_required, is_email, is_min, etc. Chacune de ces fonctions vérifie la validité des données pour une règle spécifique. Si une erreur est détectée, la fonction renvoie false et le message d'erreur est collecté et renvoyé à la fin de la validation.
-
-    Les messages d'erreur par défaut sont définis en tant que constante DEFAULT_VALIDATION_ERRORS qui peut être remplacé par les messages personnalisés en utilisant le tableau de messages en entrée de la fonction validate.
-*/
-
 <?php
-
 
 const DEFAULT_VALIDATION_ERRORS = [
     'required' => 'The %s is required',
@@ -20,7 +11,6 @@ const DEFAULT_VALIDATION_ERRORS = [
     'secure' => 'The %s must have between 8 and 64 characters and contain at least one number, one upper case letter, one lower case letter and one special character',
     'unique' => 'The %s already exists',
 ];
-
 
 function validate(array $data, array $fields, array $messages = []): array
 {
